@@ -1,0 +1,53 @@
+.calc {
+    height: 70vh;
+    width: 50vh;
+    background-color: #000000;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .screen {
+    height: 20%;
+    width: 100%;
+    background-color: #cccccc;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: auto; 
+    white-space: nowrap;
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  .buttons {
+    height: 79%;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .numbers {
+    display: grid; /* <-- make grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 10px; /* space between buttons */
+    padding: 10px;
+  }
+  
+  .nums {
+    background-color: #dddddd;
+    display: flex; /* center number inside */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+  }
+  
+  .nums:hover {
+    background-color: #cccccc;
+  }
+  
